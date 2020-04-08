@@ -31,5 +31,16 @@ namespace FinanceApp
                 this.InterestRate = p;
             }
         }
+
+        public void SetInterestGreatRate (int p)
+        {
+            if(Capital >= 25 )
+            {
+                InterestRate = 0;
+            }  else
+            {
+                this.InterestRate = 0;
+            }
+        }
     }
 }

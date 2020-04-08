@@ -58,6 +58,19 @@ namespace FinanceApp.Test
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+
+        public void Test_SetInterestGreatRate()
+        {
+            FinancialManager manager = new FinancialManager();
+
+            manager.SetInterestGreatRate(26);
+            double excepted = 0;
+            double actual = manager.InterestRate;
+
+            Assert.AreEqual(excepted,actual);
+        }
     }
 }
 
