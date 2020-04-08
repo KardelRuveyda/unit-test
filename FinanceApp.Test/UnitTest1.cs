@@ -23,6 +23,7 @@ namespace FinanceApp.Test
         public void Test_SetCapitalAsNegative()
         {
             FinancialManager manager = new FinancialManager();
+
             manager.SetCapital(-20);
 
             double expected = 0;
